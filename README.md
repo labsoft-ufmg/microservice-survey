@@ -208,3 +208,28 @@ Automated Deployment: Developers should have a common way to trigger automated d
 Service teams should own, operate and evolve the services they build. Their work is done when the service is retired, not when it's shipped.
 ```
 
+ - ### Search String: "Good features of Microservice Architecture"
+| BLOG 1 |Do Good Microservices Architectures Spell the Death of the Enterprise Service Bus? |
+| ------ | ------ |
+| Access date| May-2017 |
+| URL | https://www.voxxed.com/blog/2015/01/good-microservices-architectures-death-enterprise-service-bus-part-one/ |
+| Author | **Kai Wähner**: He works as Technology Evangelist at TIBCO. |
+
+```sh
+Important difference from SOA: No commitment to a unique technology, Services managed as products, with their own lifecycle, Industrialised deployment.
+```
+
+```sh
+Challenges od Microservices: All of these services require integration, All of these services and technologies require automation of deployment and configuration, All of these services require logging and monitoring, All of these services require hybrid deployment.
+```
+**Requirements to overcome those challenges**
+```sh
+Services Contract: A service contract is the number one requirement in a world of distributed, independent services. The service provider uses the contract to express the purpose of the microservice, and its requirements. Other developers can easily access this information.
+```
+```sh
+Discovery of Services: A service contract is important. However, you also have to be able to discover and use other services. Services have to be published via a service gateway. The gateway enforces consumption contracts, ensures Y-scaling and reliability of microservices, and allows the reuse of microservices in multiple contexts without change.
+```
+```sh
+Services need to scale very rapidly. Automation is key for agile, flexible and productive microservices development. Without continuous integration / continuous delivery (DevOps), you cannot realise the microservices concept efficiently.
+```
+
