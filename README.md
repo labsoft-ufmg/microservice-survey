@@ -97,7 +97,6 @@ independently of one another.
 +Components can be spread around multiple severs or even multiple data centers.
 ```
 
-
 | BLOG 1 | Introduction to Microservices |
 | ------ | ------ |
 | Access date| May-2017 |
@@ -209,6 +208,59 @@ Service teams should own, operate and evolve the services they build. Their work
 ```
 
  - ### Search String: "Good features of Microservice Architecture"
+
+| DOC 1 | 5 Fundamentals to a Successful Microservice Design |
+| ------ | ------ |
+| Access date| May-2017 |
+| URL | https://techbeacon.com/5-fundamentals-successful-microservice-design |
+| Authors | **Bernard Golden**: Named by WIRED.com as one of the 10 most influential persons in cloud computing, Bernard Golden is considered one of cloud computing’s preeminent thought leaders.|
+
+**5 fundamentals to a successful microservice design**
+```sh
+Properly scoped functionality: For this reason, the first element of a microservice is to define what it should do. What is the breadth of functionality it should implement?
+```
+```sh
+One way to define the proper scope is to partition the services along logical functionality lines.
+```
+```sh
+Another scoping approach is to mirror the development organization’s structure.
+```
+```sh
+A third approach, recommended in the excellent Building Microservices book by Sam Newman, is to minimize a service to the amount of code that could be re-implemented by the team in a two-week period.
+```
+```sh
+Presenting an API: Once you break up a single application into multiple cooperating services, how should the services talk to one another? Typically, this is done with REST web services API calls, although you can use other transport mechanisms as well.
+```
+```sh
+Traffic management: Addressing this too-heavy traffic situation requires management. There must be a way for calling and called services to communicate status and coordinate traffic loads.
+```
+```sh
+Monitoring: The monitoring system for a microservices-based application must allow for ongoing resource change, be able to capture monitoring data in a central location, and display information that reflects the frequently changing nature of microservices applications.
+```
+| DOC 2 | Seven Features to look for in a Microservices Stack|
+| ------ | ------ |
+| Access date| May-2017 |
+| URL | https://www.softwareag.com/corporate/images/sec_SAG_Evolution_Microservices_8PG_WP_Oct15_tcm16-134405.pdf |
+| Authors | **Rob Tiberio**:  He has more than 25 years of experiencein large-scale enterprise architecture, networks and communications, mainframes and open systems
+technologies.|
+
+```sh
+The difference between microservices and SOA: The main difference is that a microservice employs a practice that attempts to eliminate any dependencies on other microservices. SOA does not make this practice explicit as a requirement; it’s left as an implementation detail. 
+```
+```sh
+The only way that one microservice should ever speak to another
+microservice is through a common network protocol, such as REST.
+```
+```sh
+DevOps: The introduction of microservices in IT impacts deeply ingrained culture and breaks the barriers between Dev and Ops. This signifies a movement away from the traditional IT development and IT operations into DevOps. So, before any company goes too deep into microservices, it must step back and ask whether it’s also ready to break the traditional barrier between IT operations and IT development.
+```
+**Things to look for in microservices stack**
+-  Lightweight containers
+-   Polyglot programming environment
+-    Mediation and intelligent routing: All microservices-based architectures end up having multiple instances of the same kind of functionality to support scaling. Therefore, one of the challenges is how to effectively route the right request to the right instance of a microservice, and how to mitigate and mediate that traffic.
+-    Monitoring and manageability
+
+
 | BLOG 1 |Do Good Microservices Architectures Spell the Death of the Enterprise Service Bus? |
 | ------ | ------ |
 | Access date| May-2017 |
@@ -220,7 +272,7 @@ Important difference from SOA: No commitment to a unique technology, Services ma
 ```
 
 ```sh
-Challenges od Microservices: All of these services require integration, All of these services and technologies require automation of deployment and configuration, All of these services require logging and monitoring, All of these services require hybrid deployment.
+Challenges of Microservices: All of these services require integration, All of these services and technologies require automation of deployment and configuration, All of these services require logging and monitoring, All of these services require hybrid deployment.
 ```
 **Requirements to overcome those challenges**
 ```sh
@@ -232,4 +284,5 @@ Discovery of Services: A service contract is important. However, you also have t
 ```sh
 Services need to scale very rapidly. Automation is key for agile, flexible and productive microservices development. Without continuous integration / continuous delivery (DevOps), you cannot realise the microservices concept efficiently.
 ```
+
 
