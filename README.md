@@ -260,6 +260,25 @@ DevOps: The introduction of microservices in IT impacts deeply ingrained culture
 -    Mediation and intelligent routing: All microservices-based architectures end up having multiple instances of the same kind of functionality to support scaling. Therefore, one of the challenges is how to effectively route the right request to the right instance of a microservice, and how to mitigate and mediate that traffic.
 -    Monitoring and manageability
 
+| DOC 3 | 4 Important Microservice Characteristics |
+| ------ | ------ |
+| Access date| May-2017 |
+| URL | https://homeadvisor.tech/4-important-microservice-characteristics/ |
+| Authors | Home Advisor: based in Golden, CO, HomeAdvisor’s technology group is comprised of nearly 100 Java ninjas, front end gladiators, QA warriors, U/X experts and other rock stars.|
+
+```sh
+Single Responsibility: A microservice should have a single responsibility. That is, it does one thing, regardless of how “big” it gets. A microservice encapsulates a bounded domain context. It is responsible for a particular domain concept within your overall application.
+```
+```sh
+Share Nothing: Consider microservices as really big classes. They have a public API in the form of REST endpoints, message queues, etc., as well as internal state. Anything inside the the microservice may be changed or updated, as long as those public contracts are maintained.
+```
+```sh
+Monitored: This means that your monitoring systems must evolve. I once heard someone say, “If it isn’t monitored, it doesn’t exist.” This is especially true with microservices. Without proper monitoring, it would be very easy for a sick microservice to go unnoticed in the crowd of applications.
+```
+```sh
+Clustered: The implication here is that microservices should be written with the assumption that more than one will be running. If there’s an operation that should only run once, such as a scheduled tasks, the members of the microservice cluster 
+will need to coordinate among themselves using something like Apache ZooKeeper.
+```
 
 | BLOG 1 |Do Good Microservices Architectures Spell the Death of the Enterprise Service Bus? |
 | ------ | ------ |
@@ -285,4 +304,29 @@ Discovery of Services: A service contract is important. However, you also have t
 Services need to scale very rapidly. Automation is key for agile, flexible and productive microservices development. Without continuous integration / continuous delivery (DevOps), you cannot realise the microservices concept efficiently.
 ```
 
+| BLOG 2| Microservices Architecture: advantages and drawbacks |
+| ------ | ------ |
+| Access date| May-2017 |
+| URL | http://cloudacademy.com/blog/microservices-architecture-challenge-advantage-drawback/ |
+| Author | **Vineet Badola**: Working as a cloud professional for last 6 years in various organizations, he has experience in three of the most popular cloud platforms. He has around 10 years of IT experience in various roles. |
 
+```sh
+The Y axis is the one on which we’ll focus. This axis represents functional decomposition. In this kind of strategy, various functions can be seen as independent services. So, instead of deploying the entire application only once everyone is done, developers can deploy their respective services independently without waiting for the others to finish their modules.
+```
+```diff
++This not only improves developer time management, but also offers them much more flexibility to change and redeploy their modules without needing to worry about the rest of the application’s components.
+```
+
+- Microservices advantages and drawbacks
+ ```diff
++Improves fault isolation: larger applications can remain largely unaffected by the failure of a single module.
+```
+```diff
++Eliminates long-term commitment to a single technology stack: If you want to try out a new technology stack on an individual service, go right ahead.
+```
+```diff
++Makes it easier for a new developer to understand the functionality of a service.
+```
+```diff
+-Deploying microservices can be complex. They may need coordination among multiple services, which may not be as straightforward as deploying a WAR in a container.
+```
