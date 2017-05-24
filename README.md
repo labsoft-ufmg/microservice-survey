@@ -290,8 +290,7 @@ the frequently changing nature of microservices applications.
 | ------ | ------ |
 | Access date| May-2017 |
 | URL | https://www.softwareag.com/corporate/images/sec_SAG_Evolution_Microservices_8PG_WP_Oct15_tcm16-134405.pdf |
-| Authors | **Rob Tiberio**:  He has more than 25 years of experiencein large-scale enterprise architecture, networks and communications, mainframes and open systems
-technologies.|
+| Authors | **Rob Tiberio**:  He has more than 25 years of experiencein large-scale enterprise architecture, networks and communications, mainframes and open systems technologies.|
 
 ```sh
 The difference between microservices and SOA: The main difference is that a microservice employs a practice 
@@ -426,10 +425,12 @@ be as straightforward as deploying a WAR in a container.
 The architectural approach is not different but the technologies behind it really are.
 ```
 ```sh
-REST is a fundamental approach for microservices. But it is not necessarily the only way that you might want to talk to your service.
+REST is a fundamental approach for microservices. But it is not necessarily the only way that you might want
+to talk to your service.
 ```
 ```diff
--Once you start to create microservices that scale independently, remote interactions over HTTP or a binary protocol are going to be slower than in-memory procedure calls.
+-Once you start to create microservices that scale independently, remote interactions over HTTP or a binary 
+protocol are going to be slower than in-memory procedure calls.
 ```
 
 | DOC 2 | Microservices – Please, don’t |
@@ -441,7 +442,11 @@ REST is a fundamental approach for microservices. But it is not necessarily the 
 **DOC VERY IMPORTANT**
 - Fallacy #1: Cleaner Code
 ```sh
-The simple fact of the matter is that microservices, nor any approach for modeling a technical stack, are a requirement for writing cleaner or more maintainable code. It is true that since there are less pieces involved, your ability to write lazy or poorly thought out code decreases, however this is like saying you can solve crime by removing desirable items from store fronts. You haven’t fixed the problem, you’ve simply removed many of your options.
+The simple fact of the matter is that microservices, nor any approach for modeling a technical stack, are a 
+requirement for writing cleaner or more maintainable code. It is true that since there are less pieces involved,
+your ability to write lazy or poorly thought out code decreases, however this is like saying you can solve 
+crime by removing desirable items from store fronts. You haven’t fixed the problem, you’ve simply removed
+many of your options.
 ```
 
 - Fallacy #2: It’s Easier
@@ -451,7 +456,11 @@ Distributed Transactions are never easy.
 
 - Fallacy #3: It’s Faster
 ```sh
-You could gain a lot of performance in a monolith by simply applying a little extra discipline. Rewriting an old Ruby on Rails, or Django, or NodeJS app into a language like Scala or Go (two popular choices for a microservice architecture) is going to have a lot of performance improvements inherent to the choice of technology itself. But these languages don’t really “care” that you chose to describe the process they run in as “micro”, they simply perform better due to things like compilation.
+You could gain a lot of performance in a monolith by simply applying a little extra discipline. Rewriting an
+old Ruby on Rails, or Django, or NodeJS app into a language like Scala or Go (two popular choices for a 
+microservice architecture) is going to have a lot of performance improvements inherent to the choice of technology
+itself. But these languages don’t really “care” that you chose to describe the process they run in as “micro”,
+they simply perform better due to things like compilation.
 ```
 
 - Fallacy #4: Simple for Engineers
@@ -471,19 +480,29 @@ You can scale a microservice outward just as easily as you can scale a monolith.
 | Author | **Jan Stenberg**: Jan is working as an IT consultant since more than 20 years, currently for Knowit in northern Sweden, experienced in building systems on both .Net/C# and JVM/Java platforms.|
 
 ```diff
--Using an external architect creating the design leaving only the implementation for the teams interferes with product team’s responsibility which Khorikov believes is one of the more important aspects of microservices and breaks the feedback loop from the actual code back to the design
+-Using an external architect creating the design leaving only the implementation for the teams interferes
+with product team’s responsibility which Khorikov believes is one of the more important aspects of 
+microservices and breaks the feedback loop from the actual code back to the design
 ```
 ```diff
--A dedicated DBA that takes full control of all databases, including design and profiling, with an approval needed for most changes, effectively prevents a team from optimising their database structures.
+-A dedicated DBA that takes full control of all databases, including design and profiling, with an approval
+needed for most changes, effectively prevents a team from optimising their database structures.
 ```
 ```diff
--A shared code base delivered to the teams with no access to the source code and not able to fix bugs by themselves slows the teams down. Khorikov emphasizes that only utility logic should be shared; sharing domain logic breaks the boundaries between contexts in different microservices.
+-A shared code base delivered to the teams with no access to the source code and not able to fix bugs by
+themselves slows the teams down. Khorikov emphasizes that only utility logic should be shared; sharing 
+domain logic breaks the boundaries between contexts in different microservices.
 ```
 ```diff
--A shared environment with e.g. the same database instance for all services can very quickly create confusion about who owns the different tables and reluctance of removing anything in fear of destroying products for other teams. A main principle for Khorikov is organization around business capabilities with one data store for each service.
+-A shared environment with e.g. the same database instance for all services can very quickly create 
+confusion about who owns the different tables and reluctance of removing anything in fear of destroying 
+products for other teams. A main principle for Khorikov is organization around business capabilities with
+one data store for each service.
 ```
 ```sh
-Khorikov concludes by claiming that although a microservices architecture can bring competitive advantage, every aspect of the development process should be considered to avoid adding program structures without real purpose.
+Khorikov concludes by claiming that although a microservices architecture can bring competitive advantage,
+every aspect of the development process should be considered to avoid adding program structures without 
+real purpose.
 ```
 
 | DOC 4 | The 7 Deadly Sins of Microservices |
@@ -493,19 +512,36 @@ Khorikov concludes by claiming that although a microservices architecture can br
 | Author | **Tareq Abedrabbo**: Tareq is Chief Technology Officer for OpenCredo having joined the company in 2010.|
 
 ```sh
-Building the wrong thing: The risk in this case is to invest time and effort into activities that turn out to be inessential. Lack of clarity in the goals and scope of the project can therefore lead to increased complexity and loss of focus in the development effort.
+Building the wrong thing: The risk in this case is to invest time and effort into activities that turn out
+to be inessential. Lack of clarity in the goals and scope of the project can therefore lead to increased 
+complexity and loss of focus in the development effort.
 ```
 ```sh
-Failing to adopt a contract-first design approach: One common pitfall when implementing a service is focusing primarily on the implementation at the expense of the service’s contract. If the a service’s API (contract) is not well thought out, there is a risk that we expose internal implementation details to consumers, making the service hard to consume and to evolve when new requirements arise.
+Failing to adopt a contract-first design approach: One common pitfall when implementing a service is 
+focusing primarily on the implementation at the expense of the service’s contract. If the a service’s 
+API (contract) is not well thought out, there is a risk that we expose internal implementation details 
+to consumers, making the service hard to consume and to evolve when new requirements arise.
 ```
 ```sh
-Assuming the wrong communication protocols: It is quite common for microservices to make use of simple communication protocols, such as http, or in some cases lightweight message brokers, to communicate. Messages exchanged can be encoded in a variety of ways, from human-readable formats (JSON, YAML), to serialised binary objects.
+Assuming the wrong communication protocols: It is quite common for microservices to make use of simple 
+communication protocols, such as http, or in some cases lightweight message brokers, to communicate.
+Messages exchanged can be encoded in a variety of ways, from human-readable formats (JSON, YAML), to 
+serialised binary objects.
 ```
 ```sh
-Introducing a shared domain model: An application is no more one single entity with rigidly defined boundaries; it is instead an aggregation of a number of any number of services that should be loosely coupled and independent. Sharing the same domain across services creates tight coupling and should be considered as a potential indication that one logical service is being split across a number of deployable units.
+Introducing a shared domain model: An application is no more one single entity with rigidly defined 
+boundaries; it is instead an aggregation of a number of any number of services that should be loosely 
+coupled and independent. Sharing the same domain across services creates tight coupling and should be 
+considered as a potential indication that one logical service is being split across a number of 
+deployable units.
 ```
 ```sh
-Defining inappropriate service boundaries: Another common issue resulting from applying familiar development practices indiscriminately to a microservices architecture is to create new services directly from internal application components without considering carefully the boundaries of each service.What you should do instead: Design services that are truly self-contained and independent. In a microservices architecture, service boundaries should enforce separation of concerns at a business level, as opposed to separation of concerns along technical layers, which is common for monolithic applications.
+Defining inappropriate service boundaries: Another common issue resulting from applying familiar 
+development practices indiscriminately to a microservices architecture is to create new services directly
+from internal application components without considering carefully the boundaries of each service.
+What you should do instead: Design services that are truly self-contained and independent. In a 
+icroservices architecture, service boundaries should enforce separation of concerns at a business level,
+as opposed to separation of concerns along technical layers, which is common for monolithic applications.
 ```
 
 | BLOG 1 | The Good, The Bad, and The Ugly of Microservice Architecture |
@@ -515,10 +551,12 @@ Defining inappropriate service boundaries: Another common issue resulting from a
 | Author | **Ciklum**|
 
 ```diff
--While it may be nice to be able to break up your development team to handle the different parts of your project, that distinction makes it harder for the different teams to communicate and work together.
+-While it may be nice to be able to break up your development team to handle the different parts of 
+your project, that distinction makes it harder for the different teams to communicate and work together.
 ```
 **When you need to move responsibility from one microservice to another, things get a lot more complicated, especially if different parts have been written in different languages.**
 
 ```diff
--When you divide your system into too many separate parts, you end up with the ugly side of microservices: “nanoservices".
+-When you divide your system into too many separate parts, you end up with the ugly side of microservices:
+“nanoservices".
 ```
