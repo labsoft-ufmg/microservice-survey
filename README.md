@@ -21,7 +21,7 @@ resource API
 ```
 ```sh
 Componentization via services. Component is a unit of software that is independently replaceable and 
-upgradeable).
+upgradeable.
 ```
 
 ```sh
