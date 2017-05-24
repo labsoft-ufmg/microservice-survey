@@ -254,11 +254,13 @@ the service is retired, not when it's shipped.
 | ------ | ------ |
 | Access date| May-2017 |
 | URL | https://techbeacon.com/5-fundamentals-successful-microservice-design |
-| Authors | **Bernard Golden**: Named by WIRED.com as one of the 10 most influential persons in cloud computing, Bernard Golden is considered one of cloud computing’s preeminent thought leaders.|
+| Authors | **Bernard Golden**: Named by WIRED.com as one of the 10 most influential persons in cloud computing,
+Bernard Golden is considered one of cloud computing’s preeminent thought leaders.|
 
 **5 fundamentals to a successful microservice design**
 ```sh
-Properly scoped functionality: For this reason, the first element of a microservice is to define what it should do. What is the breadth of functionality it should implement?
+Properly scoped functionality: For this reason, the first element of a microservice is to define what it 
+should do. What is the breadth of functionality it should implement?
 ```
 ```sh
 One way to define the proper scope is to partition the services along logical functionality lines.
@@ -267,16 +269,22 @@ One way to define the proper scope is to partition the services along logical fu
 Another scoping approach is to mirror the development organization’s structure.
 ```
 ```sh
-A third approach, recommended in the excellent Building Microservices book by Sam Newman, is to minimize a service to the amount of code that could be re-implemented by the team in a two-week period.
+A third approach, recommended in the excellent Building Microservices book by Sam Newman, is to minimize
+a service to the amount of code that could be re-implemented by the team in a two-week period.
 ```
 ```sh
-Presenting an API: Once you break up a single application into multiple cooperating services, how should the services talk to one another? Typically, this is done with REST web services API calls, although you can use other transport mechanisms as well.
+Presenting an API: Once you break up a single application into multiple cooperating services, how should
+the services talk to one another? Typically, this is done with REST web services API calls, although you
+can use other transport mechanisms as well.
 ```
 ```sh
-Traffic management: Addressing this too-heavy traffic situation requires management. There must be a way for calling and called services to communicate status and coordinate traffic loads.
+Traffic management: Addressing this too-heavy traffic situation requires management. There must be a way 
+for calling and called services to communicate status and coordinate traffic loads.
 ```
 ```sh
-Monitoring: The monitoring system for a microservices-based application must allow for ongoing resource change, be able to capture monitoring data in a central location, and display information that reflects the frequently changing nature of microservices applications.
+Monitoring: The monitoring system for a microservices-based application must allow for ongoing resource 
+change, be able to capture monitoring data in a central location, and display information that reflects
+the frequently changing nature of microservices applications.
 ```
 | DOC 2 | Seven Features to look for in a Microservices Stack|
 | ------ | ------ |
@@ -286,19 +294,27 @@ Monitoring: The monitoring system for a microservices-based application must all
 technologies.|
 
 ```sh
-The difference between microservices and SOA: The main difference is that a microservice employs a practice that attempts to eliminate any dependencies on other microservices. SOA does not make this practice explicit as a requirement; it’s left as an implementation detail. 
+The difference between microservices and SOA: The main difference is that a microservice employs a practice 
+that attempts to eliminate any dependencies on other microservices. SOA does not make this practice explicit
+as a requirement; it’s left as an implementation detail. 
 ```
 ```sh
 The only way that one microservice should ever speak to another
 microservice is through a common network protocol, such as REST.
 ```
 ```sh
-DevOps: The introduction of microservices in IT impacts deeply ingrained culture and breaks the barriers between Dev and Ops. This signifies a movement away from the traditional IT development and IT operations into DevOps. So, before any company goes too deep into microservices, it must step back and ask whether it’s also ready to break the traditional barrier between IT operations and IT development.
+DevOps: The introduction of microservices in IT impacts deeply ingrained culture and breaks the barriers 
+between Dev and Ops. This signifies a movement away from the traditional IT development and IT operations 
+into DevOps. So, before any company goes too deep into microservices, it must step back and ask whether 
+it’s also ready to break the traditional barrier between IT operations and IT development.
 ```
 **Things to look for in microservices stack**
 -  Lightweight containers
 -   Polyglot programming environment
--    Mediation and intelligent routing: All microservices-based architectures end up having multiple instances of the same kind of functionality to support scaling. Therefore, one of the challenges is how to effectively route the right request to the right instance of a microservice, and how to mitigate and mediate that traffic.
+-    Mediation and intelligent routing: All microservices-based architectures end up having multiple 
+instances of the same kind of functionality to support scaling. Therefore, one of the challenges is how 
+to effectively route the right request to the right instance of a microservice, and how to mitigate and 
+mediate that traffic.
 -    Monitoring and manageability
 
 | DOC 3 | 4 Important Microservice Characteristics |
@@ -308,17 +324,25 @@ DevOps: The introduction of microservices in IT impacts deeply ingrained culture
 | Authors | Home Advisor: based in Golden, CO, HomeAdvisor’s technology group is comprised of nearly 100 Java ninjas, front end gladiators, QA warriors, U/X experts and other rock stars.|
 
 ```sh
-Single Responsibility: A microservice should have a single responsibility. That is, it does one thing, regardless of how “big” it gets. A microservice encapsulates a bounded domain context. It is responsible for a particular domain concept within your overall application.
+Single Responsibility: A microservice should have a single responsibility. That is, it does one thing,
+regardless of how “big” it gets. A microservice encapsulates a bounded domain context. It is responsible
+for a particular domain concept within your overall application.
 ```
 ```sh
-Share Nothing: Consider microservices as really big classes. They have a public API in the form of REST endpoints, message queues, etc., as well as internal state. Anything inside the the microservice may be changed or updated, as long as those public contracts are maintained.
+Share Nothing: Consider microservices as really big classes. They have a public API in the form of REST
+endpoints, message queues, etc., as well as internal state. Anything inside the the microservice may be
+changed or updated, as long as those public contracts are maintained.
 ```
 ```sh
-Monitored: This means that your monitoring systems must evolve. I once heard someone say, “If it isn’t monitored, it doesn’t exist.” This is especially true with microservices. Without proper monitoring, it would be very easy for a sick microservice to go unnoticed in the crowd of applications.
+Monitored: This means that your monitoring systems must evolve. I once heard someone say, “If it isn’t
+monitored, it doesn’t exist.” This is especially true with microservices. Without proper monitoring, 
+it would be very easy for a sick microservice to go unnoticed in the crowd of applications.
 ```
 ```sh
-Clustered: The implication here is that microservices should be written with the assumption that more than one will be running. If there’s an operation that should only run once, such as a scheduled tasks, the members of the microservice cluster 
-will need to coordinate among themselves using something like Apache ZooKeeper.
+Clustered: The implication here is that microservices should be written with the assumption that more 
+than one will be running. If there’s an operation that should only run once, such as a scheduled tasks,
+the members of the microservice cluster will need to coordinate among themselves using something like 
+Apache ZooKeeper.
 ```
 
 | BLOG 1 |Do Good Microservices Architectures Spell the Death of the Enterprise Service Bus? |
@@ -328,21 +352,31 @@ will need to coordinate among themselves using something like Apache ZooKeeper.
 | Author | **Kai Wähner**: He works as Technology Evangelist at TIBCO. |
 
 ```sh
-Important difference from SOA: No commitment to a unique technology, Services managed as products, with their own lifecycle, Industrialised deployment.
+Important difference from SOA: No commitment to a unique technology, Services managed as products,
+with their own lifecycle, Industrialised deployment.
 ```
 
 ```sh
-Challenges of Microservices: All of these services require integration, All of these services and technologies require automation of deployment and configuration, All of these services require logging and monitoring, All of these services require hybrid deployment.
+Challenges of Microservices: All of these services require integration, All of these services and 
+technologies require automation of deployment and configuration, All of these services require logging
+and monitoring, All of these services require hybrid deployment.
 ```
 **Requirements to overcome those challenges**
 ```sh
-Services Contract: A service contract is the number one requirement in a world of distributed, independent services. The service provider uses the contract to express the purpose of the microservice, and its requirements. Other developers can easily access this information.
+Services Contract: A service contract is the number one requirement in a world of distributed, 
+independent services. The service provider uses the contract to express the purpose of the microservice,
+and its requirements. Other developers can easily access this information.
 ```
 ```sh
-Discovery of Services: A service contract is important. However, you also have to be able to discover and use other services. Services have to be published via a service gateway. The gateway enforces consumption contracts, ensures Y-scaling and reliability of microservices, and allows the reuse of microservices in multiple contexts without change.
+Discovery of Services: A service contract is important. However, you also have to be able to discover 
+and use other services. Services have to be published via a service gateway. The gateway enforces 
+consumption contracts, ensures Y-scaling and reliability of microservices, and allows the reuse of
+microservices in multiple contexts without change.
 ```
 ```sh
-Services need to scale very rapidly. Automation is key for agile, flexible and productive microservices development. Without continuous integration / continuous delivery (DevOps), you cannot realise the microservices concept efficiently.
+Services need to scale very rapidly. Automation is key for agile, flexible and productive microservices
+development. Without continuous integration / continuous delivery (DevOps), you cannot realise the 
+microservices concept efficiently.
 ```
 
 | BLOG 2| Microservices Architecture: advantages and drawbacks |
@@ -352,10 +386,14 @@ Services need to scale very rapidly. Automation is key for agile, flexible and p
 | Author | **Vineet Badola**: Working as a cloud professional for last 6 years in various organizations, he has experience in three of the most popular cloud platforms. He has around 10 years of IT experience in various roles. |
 
 ```sh
-The Y axis is the one on which we’ll focus. This axis represents functional decomposition. In this kind of strategy, various functions can be seen as independent services. So, instead of deploying the entire application only once everyone is done, developers can deploy their respective services independently without waiting for the others to finish their modules.
+The Y axis is the one on which we’ll focus. This axis represents functional decomposition. In this kind 
+of strategy, various functions can be seen as independent services. So, instead of deploying the entire
+application only once everyone is done, developers can deploy their respective services independently 
+without waiting for the others to finish their modules.
 ```
 ```diff
-+This not only improves developer time management, but also offers them much more flexibility to change and redeploy their modules without needing to worry about the rest of the application’s components.
++This not only improves developer time management, but also offers them much more flexibility to change
+and redeploy their modules without needing to worry about the rest of the application’s components.
 ```
 
 - Microservices advantages and drawbacks
@@ -363,13 +401,15 @@ The Y axis is the one on which we’ll focus. This axis represents functional de
 +Improves fault isolation: larger applications can remain largely unaffected by the failure of a single module.
 ```
 ```diff
-+Eliminates long-term commitment to a single technology stack: If you want to try out a new technology stack on an individual service, go right ahead.
++Eliminates long-term commitment to a single technology stack: If you want to try out a new technology
+stack on an individual service, go right ahead.
 ```
 ```diff
 +Makes it easier for a new developer to understand the functionality of a service.
 ```
 ```diff
--Deploying microservices can be complex. They may need coordination among multiple services, which may not be as straightforward as deploying a WAR in a container.
+-Deploying microservices can be complex. They may need coordination among multiple services, which may not 
+be as straightforward as deploying a WAR in a container.
 ```
 
 ---
