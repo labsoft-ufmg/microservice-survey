@@ -129,9 +129,9 @@ rejects other parts of SOA, such as the concept of a canonical schema.
 
 ```diff
 +This architecture enables each service to be developed independently by a team that is focused
-on that service. The developers are free to choose whatever technologies make sense. This 
-freedom means that developers are no longer obligated to use the possibly obsolete technologies
-that existed at the start of a new project.
++on that service. The developers are free to choose whatever technologies make sense. This 
++freedom means that developers are no longer obligated to use the possibly obsolete technologies
++that existed at the start of a new project.
 ```
 ```diff
 +Microservices Architecture pattern enables each microservice to be deployed independently. 
@@ -141,20 +141,20 @@ that existed at the start of a new project.
 ```
 ```diff
 -A major drawback of microservices is the complexity that arises from the fact that a 
-microservices application is a distributed system.
+-microservices application is a distributed system.
 ```
 ```diff
 -Another challenge with microservices is the partitioned database architecture. Business 
-transactions that update multiple business entities are fairly common. You need to update 
-multiple databases owned by different services.
+-transactions that update multiple business entities are fairly common. You need to update 
+-multiple databases owned by different services.
 ```
 ```diff
 -Testing a microservices application is also much more complex.
 ```
 ```diff
 -Deploying a microservices‑based application is also much more complex. Successfully
-deploying a microservices application requires greater control of deployment methods by
-developers, and a high level of automation.
+-deploying a microservices application requires greater control of deployment methods by
+-developers, and a high level of automation.
 ```
 
 | BLOG 2 | Best Practices for Building a Microservice Architecture |
@@ -205,11 +205,11 @@ and platform independent.
 
 ```diff
 +HTTP is a great choice for synchronous communications. HTTP clients are already available
-in all languages.
++in all languages.
 ```
 ```diff
 -The one negative of HTTP is that it's a verbose protocol as plain text headers are repeatedly
-sent and connections are repeatedly created and torn down.
+-sent and connections are repeatedly created and torn down.
 ```
 **We already have a better option on the horizon: HTTP/2. It effectively solves the verbosity
 problem by using compressed headers and multiplexing requests over persistent connections.
@@ -392,7 +392,7 @@ without waiting for the others to finish their modules.
 ```
 ```diff
 +This not only improves developer time management, but also offers them much more flexibility to change
-and redeploy their modules without needing to worry about the rest of the application’s components.
++and redeploy their modules without needing to worry about the rest of the application’s components.
 ```
 
 - Microservices advantages and drawbacks
@@ -401,14 +401,14 @@ and redeploy their modules without needing to worry about the rest of the applic
 ```
 ```diff
 +Eliminates long-term commitment to a single technology stack: If you want to try out a new technology
-stack on an individual service, go right ahead.
++stack on an individual service, go right ahead.
 ```
 ```diff
 +Makes it easier for a new developer to understand the functionality of a service.
 ```
 ```diff
 -Deploying microservices can be complex. They may need coordination among multiple services, which may not 
-be as straightforward as deploying a WAR in a container.
+-be as straightforward as deploying a WAR in a container.
 ```
 
 ---
@@ -430,7 +430,7 @@ to talk to your service.
 ```
 ```diff
 -Once you start to create microservices that scale independently, remote interactions over HTTP or a binary 
-protocol are going to be slower than in-memory procedure calls.
+-protocol are going to be slower than in-memory procedure calls.
 ```
 
 | DOC 2 | Microservices – Please, don’t |
@@ -481,12 +481,12 @@ You can scale a microservice outward just as easily as you can scale a monolith.
 
 ```diff
 -Using an external architect creating the design leaving only the implementation for the teams interferes
-with product team’s responsibility which Khorikov believes is one of the more important aspects of 
-microservices and breaks the feedback loop from the actual code back to the design
+-with product team’s responsibility which Khorikov believes is one of the more important aspects of 
+-microservices and breaks the feedback loop from the actual code back to the design
 ```
 ```diff
 -A dedicated DBA that takes full control of all databases, including design and profiling, with an approval
-needed for most changes, effectively prevents a team from optimising their database structures.
+-needed for most changes, effectively prevents a team from optimising their database structures.
 ```
 ```diff
 -A shared code base delivered to the teams with no access to the source code and not able to fix bugs by
@@ -495,9 +495,9 @@ domain logic breaks the boundaries between contexts in different microservices.
 ```
 ```diff
 -A shared environment with e.g. the same database instance for all services can very quickly create 
-confusion about who owns the different tables and reluctance of removing anything in fear of destroying 
-products for other teams. A main principle for Khorikov is organization around business capabilities with
-one data store for each service.
+-confusion about who owns the different tables and reluctance of removing anything in fear of destroying 
+-products for other teams. A main principle for Khorikov is organization around business capabilities with
+-one data store for each service.
 ```
 ```sh
 Khorikov concludes by claiming that although a microservices architecture can bring competitive advantage,
@@ -552,11 +552,11 @@ as opposed to separation of concerns along technical layers, which is common for
 
 ```diff
 -While it may be nice to be able to break up your development team to handle the different parts of 
-your project, that distinction makes it harder for the different teams to communicate and work together.
+-your project, that distinction makes it harder for the different teams to communicate and work together.
 ```
 **When you need to move responsibility from one microservice to another, things get a lot more complicated, especially if different parts have been written in different languages.**
 
 ```diff
 -When you divide your system into too many separate parts, you end up with the ugly side of microservices:
-“nanoservices".
+-“nanoservices".
 ```
