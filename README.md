@@ -41,7 +41,7 @@ the development: user-experience, database, and project management.
 
 ```diff
 -The biggest issue in changing a monolith into microservices lies in changing the communication pattern. A 
-naive conversion from in-memory method calls to RPC leads to chatty communications which don't perform well.
+-naive conversion from in-memory method calls to RPC leads to chatty communications which don't perform well.
 -Instead you need to replace the fine-grained communication with a coarser -grained approach.
 ```
 ```sh
@@ -490,8 +490,8 @@ You can scale a microservice outward just as easily as you can scale a monolith.
 ```
 ```diff
 -A shared code base delivered to the teams with no access to the source code and not able to fix bugs by
-themselves slows the teams down. Khorikov emphasizes that only utility logic should be shared; sharing 
-domain logic breaks the boundaries between contexts in different microservices.
+-themselves slows the teams down. Khorikov emphasizes that only utility logic should be shared; sharing 
+-domain logic breaks the boundaries between contexts in different microservices.
 ```
 ```diff
 -A shared environment with e.g. the same database instance for all services can very quickly create 
