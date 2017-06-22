@@ -1,5 +1,4 @@
-# Microservice Study
-## A Survey About Microservice Usage
+# Microservice Study: A Survey About Microservice Usage
 
   - ### Search String: "Microservice Architecture"
   
