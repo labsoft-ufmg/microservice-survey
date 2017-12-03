@@ -439,7 +439,7 @@ to talk to your service.
 | URL | http://basho.com/posts/technical/microservices-please-dont/ |
 | Author | **Sean Kelly**: He has been a software engineer for over 12 years.|
 
-**DOC VERY IMPORTANT**
+**VERY IMPORTANT**
 - Fallacy #1: Cleaner Code
 ```sh
 The simple fact of the matter is that microservices, nor any approach for modeling a technical stack, are a 
