@@ -1,5 +1,5 @@
 # Microservices Study: A Survey About Microservices Usage
-## Mapping Study
+## Mapping Study: Advantages and Challenges of Microservices From Developers' Point of View
 
   - ### Search String: "Microservice Architecture"
   
